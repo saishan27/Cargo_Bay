@@ -12,19 +12,17 @@
 			die("Connection failed: " . $conn->connect_error);
 		}
 		
-	$fname = $_POST["fname"];
-	$lname = $_POST["lname"];
+	$sname = $_POST["sname"];
+	$sid = $_POST["sid"];
 	$mail = $_POST["mail"];
-	$uname = $_POST["uname"];
 	$passwd = $_POST["password"];
-	$mobile = $_POST["phone"];
+	$mobile = (int)$_POST["phone"];
 	
-		$sql = "INSERT INTO ser_provider (username,firstname,lastname,temail,mobile,password) 
-		VALUES ('".$uname."','".$fname."','".$lname."',
-		'".$mail."','".$mobile."','".$passwd."')"; 
-	
+		$sql = "INSERT INTO ser_provider (provider_id,provider_name,provider_password,mobile,email) 
+		VALUES ('".$sid."','".$sname."','".$passwd."',
+		'".$mobile."','".$mail."')"; 
 		if ($conn->query($sql) === TRUE) {
-			echo "Traders Account signup ccessfull";
+			echo "Service Providers Account signup ccessfull";
 		} else {
 			echo "Error Creating Account: " . $conn->error;
 		}

@@ -12,15 +12,17 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE Ser_Provider (
-provider_id INT(10) PRIMARY KEY,
-provider_name VARCHAR(30),
-
+$sql = "CREATE TABLE ser_provider (
+provider_id INT(10) PRIMARY KEY NOT NULL,
+provider_name VARCHAR(30) NOT NULL,
+provider_password VARCHAR(30) NOT NULL,
+mobile INT(15) NOT NULL,
+email VARCHAR(30) NOT NULL
 
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table tickets created successfully";
+    echo "Table ser_provider created successfully";
 } else {
     echo "Error creating table: " . $conn->error;
 }

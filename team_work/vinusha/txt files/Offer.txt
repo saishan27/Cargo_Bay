@@ -38,14 +38,14 @@
  </style>
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
  <title>Untitled Document</title>
- <script type="text/javascript" src="" charset="UTF-8"></script></head>
+ <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/7EA96D73-880F-5B4E-9AEF-692325401844/main.js" charset="UTF-8"></script></head>
  
  <body>
  <form action="" method="get"><table width="500" border="0" cellspacing="0" cellpadding="0" class="tbl_bg">
  <tr>
  	<td colspan="2" valign="top" class="altalt">
    </tr>
-Type: Roadways
+Type:Roadways
    <tr>
  	<td width="150" valign="top"><p>From</p></td>
  	<td width="350" valign="top" class="lft_bdr"><p>
@@ -58,13 +58,27 @@ Type: Roadways
  	</p></td>
    </tr>
 
-
+<tr>
+ 	<td width="150" valign="top"><p>Dept Time</p></td>
+ 	<td width="350" valign="top" class="lft_bdr"><p>
+ 	  <input name="textfield" type="text" class="input">
+ 	</p></td>
+   
+ 	<td valign="top" class="alt"><p>Arrv Time	</p></td>
+ 	<td valign="top" class="alt lft_bdr"><p>
+ 	  <input name="textfield" type="text" class="input">
+ 	</p></td>
+   </tr>
+ 
    <tr>
- 	<td valign="top"><p>Date </p></td>
+ 	<td valign="top"><p>Date: From</p></td>
  	<td valign="top" class="lft_bdr"><p>
  	  <input name="textfield" type="text" class="input">
  	</p></td>
- 	
+ 	<td valign="top" class="alt"><p>To</p></td>
+ 	<td valign="top" class="alt lft_bdr"><p>
+ 	  <input name="textfield" type="text" class="input">
+ 	</p></td>
    </tr>
    <tr>
  	<td valign="top"><p>Space(cost/l*b*h)</p></td>
@@ -76,11 +90,16 @@ Type: Roadways
  	  <input name="textfield" type="text" class="input">
  	</p></td>
    </tr>
-
+   <tr>
+ 	<td valign="top"><p>Cost of travel</p></td>
+ 	<td valign="top" class="lft_bdr"><p>
+ 	  <input name="textfield" type="text" class="input">
+ 	</p></td>
+   </tr>
      <tr>
  	<td valign="top" class="alt" >&nbsp;</td>
  	<td valign="top" ><p class="alt">
- 	  <input type="submit" name="Submit" value="Find">
+ 	  <input type="submit" name="Submit" value="Offer">
  	</p></td>
    </tr>
  </table>

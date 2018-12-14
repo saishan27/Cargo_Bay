@@ -1,0 +1,10 @@
+<html>
+<body>
+
+<table border =2>
+<tr>
+<td> S.NO <td> ServiceProvider <td> From <td> To <td> Cost <td> Deliverydate <td> Book <td> Chat
+</tr>
+</table>
+</body>
+</html>

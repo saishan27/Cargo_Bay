@@ -19,7 +19,7 @@
 	$passwd = $_POST["password"];
 	$mobile = $_POST["phone"];
 	
-		$sql = "INSERT INTO traders (username,firstname,lastname,temail,mobile,password) 
+		$sql = "INSERT INTO ser_provider (username,firstname,lastname,temail,mobile,password) 
 		VALUES ('".$uname."','".$fname."','".$lname."',
 		'".$mail."','".$mobile."','".$passwd."')"; 
 	

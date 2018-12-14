@@ -14,6 +14,8 @@ if ($conn->connect_error) {
 // sql to create table
 $sql = "CREATE TABLE Ser_Provider (
 provider_id INT(10) PRIMARY KEY,
+provider_name VARCHAR(30),
+
 
 )";
 

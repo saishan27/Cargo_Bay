@@ -12,21 +12,14 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE tickets (
-ticket_id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-employee_id VARCHAR(10) NOT NULL,
-email VARCHAR(50) NOT NULL,
-summary VARCHAR(100) NOT NULL,
-priority VARCHAR(10) NOT NULL,
-reg_date TIMESTAMP,
-due_date TIMESTAMP,
-maintenance_id VARCHAR(10),
-comment VARCHAR(100),
-status VARCHAR(10) NOT NULL
+$sql = "CREATE TABLE trips (
+trip_id INT(20) AUTO_INCREMENT NOT NULL,
+
+
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table tickets created successfully";
+    echo "Table trips created successfully";
 } else {
     echo "Error creating table: " . $conn->error;
 }

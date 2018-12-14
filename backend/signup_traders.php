@@ -24,7 +24,7 @@
 		'".$mail."','".$mobile."','".$passwd."')"; 
 	
 		if ($conn->query($sql) === TRUE) {
-			echo "Traders Account signup ccessfull";
+			echo "Traders Account signup successfull";
 		} else {
 			echo "Error Creating Account: " . $conn->error;
 		}

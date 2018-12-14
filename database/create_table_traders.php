@@ -23,7 +23,7 @@ password VARCHAR(30) NOT NULL
 )";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table tickets created successfully";
+    echo "Table traders created successfully";
 } else {
     echo "Error creating table: " . $conn->error;
 }

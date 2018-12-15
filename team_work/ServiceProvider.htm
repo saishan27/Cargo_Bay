@@ -36,7 +36,7 @@
    <tr>
  	<td valign="top" class="alt"><p>Phone</p></td>
  	<td valign="top" class="alt lft_bdr"><p>
- 	  <input name="phone" type="text" class="input">
+ 	  <input name="phone" type="number" class="input">
  	</p></td>
    </tr>
    
@@ -46,23 +46,22 @@
  	  <input name="mail" type="text" class="input">
  	</p></td>
    </tr>
+   	   <tr>
    	<td valign="top"><p>Password</p></td>
  	<td valign="top" class="lft_bdr"><p>
- 	 
-
-    
-
-    <input type="text" id="password" name="password" required></tr>
-
- <tr>
-   	<td valign="top"><p> confirm Password</p></td>
- 	<td valign="top" class="lft_bdr"><p>
    
-  <input type="cpassword" id="cpsw" name="cpsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+  <input type="password" id="cpsw" name="cpsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
  <div id="message">
   
 </div> 
 </tr>
+
+  <tr>
+ 	<td width="150" valign="top"><p>Confirm Password</p></td>
+ 	<td width="350" valign="top" class="lft_bdr"><p>
+ 	  <input name="cpassword" type="password" class="input">
+ 	</p></td      
+   </tr> 
  
   </form>
 </div>
